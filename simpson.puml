@@ -1,0 +1,18 @@
+@startuml
+
+class SimpsonIntegration {
+  - n: int
+  - a: double
+  - b: double
+  + funcion(double): double
+  + SimpsonIntegration(double, double, int)
+  + integrar(): double
+}
+
+class Main {
+  - static void main(String[]): void
+}
+
+SimpsonIntegration ..> Main
+
+@enduml
